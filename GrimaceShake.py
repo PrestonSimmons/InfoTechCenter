@@ -7,7 +7,7 @@ from time import sleep
 
 #Function that list Gas Levels, randomly choosing one and returning its value
 def gasLevelGauge():
-    gasLevelList = ["Empty","Low","Quater Tank","Half Tank","Three Quarter Tank","Full Tank"]
+    gasLevelList = ["Empty","Low","Quarter Tank","Half Tank","Three Quarter Tank","Full Tank"]
     currentGasLevel = random.choice(gasLevelList)
     return currentGasLevel
 
@@ -31,6 +31,17 @@ def gasLevelAlert():
         print("Gas Tank on Low, searching for nearest gas station")
         sleep(2.5)
         print("The Closest gas station is",listOfGasStations(),"",milesToGasStationsLow,"Miles away.")
+    elif gasLevelIndicator == "Qaurter Tank":
+        print("Quarter Gas Tank, searching for nearest gas station")
+        sleep(2.5)
+        print("The Closest gas station is",listOfGasStations(),"",milesToGasStationsQuartertank,"Miles away.")
+     elif gasLevelIndicator == "Half Tank":
+         print("Gas Tank is at half")
+     elif gasLevelIndicator == "Three Quarter Tank":
+           print("Gas Tank is at Three Quarter")
+    else:
+        print("Gas Tank is full")
+        
     
 
 
