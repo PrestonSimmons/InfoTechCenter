@@ -25,8 +25,13 @@ def gasLevelAlert():
     gasLevelIndicator =  gasLevelGauge()
     if gasLevelIndicator == "Empty":
         print("***WARNING - YOU ARE ON Empty***")
-        sleep(1.25)
+        sleep(2.5)
         print("        Calling Triple AAA")
+    elif gasLevelIndicator == "Low":
+        print("Your gas tank is extremely low, checking Google Maps for the clostest gas station.")
+        sleep(2.5)
+        print("The Closest gas station is",listOfGasStations()."Which is",milesToGasStationsLow,"Miles away.")
+    
 
 
 
