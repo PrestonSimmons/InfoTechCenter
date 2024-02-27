@@ -40,7 +40,7 @@ def vehicleResponseSystem():
         print("\nNational Weather Service has updated our alarm by 60 minutes because of the forceast of",weatherAlert,
             "weather conditions.")
         print("VRS has been engaged only allowing you to drive 30pmh.")
-    elif weatherAlert == "sunny":
+    else: 
         print("\nNational Weather Service has no update for alarms today because of the forceast of",weatherAlert,
             "weather conditions.")
         print("VRS has been disengaged.")
