@@ -18,31 +18,38 @@ weatherAlert = weather()
 def vehicleResponseSystem():
     if weatherAlert == "snowy":
         print("\nNational Weather Service has updated our alarm by 30 minutes because of the forecast of",weatherAlert,
-            "weather conditions.")
-        print("VRS has been engaged only allowing you to drive 50pmh.")
-    elif weatherAlert == "blizzard":
-        print("\nNational Weather Service has updated our alarm by 45 minutes because of the forecast of",weatherAlert,
-            "weather conditions.")
+            "Weather conditions")
+        sleep(0.5)
         print("VRS has been engaged only allowing you to drive 40pmh.")
+    elif weatherAlert == "blizzard":
+        print("\nNational Weather Service has updated our alarm by 60 minutes because of the forceast of",weatherAlert,
+            "weather conditions.")
+        sleep(0.5)
+        print("VRS has been engaged only allowing you to drive 30pmh.")
     elif weatherAlert == "rainy":
         print("\nNational Weather Service has updated our alarm by 10 minutes because of the forecast of",weatherAlert,
             "weather conditions.")
+        sleep(0.5)
         print("VRS has been engaged only allowing you to drive 60pmh.")
     elif weatherAlert == "foggy":
         print("\nNational Weather Service has updated our alarm by 10 minutes because of the forecast of",weatherAlert,
             "weather conditions.")
+        sleep(0.5)
         print("VRS has been engaged only allowing you to drive 60pmh.")
     elif weatherAlert == "windy":
         print("\nNational Weather Service has updated our alarm by 10 minutes because of the forecast of",weatherAlert,
             "weather conditions.")
+        sleep(0.5)
         print("VRS has been engaged only allowing you to drive 70pmh.")
     elif weatherAlert == "icy":
         print("\nNational Weather Service has updated our alarm by 60 minutes because of the forceast of",weatherAlert,
             "weather conditions.")
+        sleep(0.5)
         print("VRS has been engaged only allowing you to drive 30pmh.")
     else: 
         print("\nNational Weather Service has no update for alarms today because of the forceast of",weatherAlert,
             "weather conditions.")
+        sleep(0.5)
         print("VRS has been disengaged.")
    
     
